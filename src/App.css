@@ -57,3 +57,19 @@
 * {
   cursor: none !important;
 }
+
+/* App.css */
+
+/* Hide the custom cursor on small screens */
+@media (max-width: 768px) {
+  .custom-cursor {
+    display: none;
+  }
+}
+
+/* Show the custom cursor on larger screens */
+@media (min-width: 769px) {
+  .custom-cursor {
+    display: block;
+  }
+}

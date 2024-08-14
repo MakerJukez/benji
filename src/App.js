@@ -1,8 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
-import TypingAnimation from './typing-animation';
-import backgroundImage from './bg.png';
-import NumberTicker from './number-ticker';
 
 function App() {
   const videoRef = useRef(null);
@@ -24,7 +21,6 @@ function App() {
       };
       setFallingBenjis(prevBenjis => [...prevBenjis, newBenji]);
 
-      // Remove the Benji after it has fallen
       setTimeout(() => {
         setFallingBenjis(prevBenjis => prevBenjis.filter(benji => benji.id !== newBenji.id));
       }, newBenji.animationDuration * 1000);
@@ -39,9 +35,7 @@ function App() {
   }, []);
 
   return (
-    <div 
-      className="h-screen w-screen flex justify-center items-center cursor-none relative overflow-hidden"
-    >
+    <div className="h-screen w-screen flex justify-center items-center cursor-none relative overflow-hidden">
       <div
         className="custom-cursor"
         style={{
@@ -80,7 +74,7 @@ function App() {
         />
       ))}
 
-      <div className='absolute z-20 text-[#2d42ff] font-custom1 text-5xl md:text-7xl'>
+      <div className='absolute z-20 text-[#2d42ff] font-custom1 text-4xl md:text-7xl'>
         benjamin
       </div>
       <div className='absolute top-5 font-custom1 text-[8px] md:text-base text-[#2d42ff]'>CA: updating...</div>
