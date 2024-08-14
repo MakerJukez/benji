@@ -66,7 +66,7 @@ function App() {
           key={benji.id}
           src="benji.png"
           alt="Falling Benji"
-          className="absolute size-20 md:size-36 object-contain"
+          className="absolute size-24 md:size-36 object-contain"
           style={{
             left: `${benji.left}%`,
             animation: `fall ${benji.animationDuration}s linear`,
