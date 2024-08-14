@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
+import NumberTicker from './number-ticker';
 
 function App() {
   const videoRef = useRef(null);
@@ -91,6 +92,27 @@ function App() {
         </a>
       </div>
       <div className='absolute inset-0 h-screen w-screen opacity-10 bg-white'></div>
+      <div className='text-5xl font-custom absolute bottom-[15%] left-[10%] text-[#52ff57] md:flex hidden'>
+        +&nbsp;$<NumberTicker className="text-[#52ff57]" value={1370} />
+      </div>
+      <div className='text-5xl font-custom absolute right-[17%] bottom-[17%] text-[#52ff57] flex'>
+        +&nbsp;$<NumberTicker className="text-[#52ff57]" value={433} />
+      </div>
+      <div className='text-5xl font-custom absolute right-[17%] top-0 md:top-[10%] text-[#52ff57] flex'>
+        +&nbsp;$<NumberTicker className="text-[#52ff57]" value={629} />
+      </div>
+      <div className='text-5xl font-custom absolute left-[17%] top-[35%] text-[#52ff57] flex'>
+        +&nbsp;$<NumberTicker className="text-[#52ff57]" value={895} />
+      </div>
+      <div className='text-5xl font-custom absolute left-[17%] top-[4%] text-[#52ff57] flex'>
+        +&nbsp;$<NumberTicker className="text-[#52ff57]" value={1496} />
+      </div>
+      <div className='text-5xl font-custom absolute right-[13%] top-[32%] text-[#52ff57] flex'>
+        +&nbsp;$<NumberTicker className="text-[#52ff57]" value={1215} />
+      </div>
+      <div className='text-5xl font-custom absolute left-[17%] top-[59%] text-[#52ff57] flex'>
+        +&nbsp;$<NumberTicker className="text-[#52ff57]" value={620} />
+      </div>
     </div>
   );
 }
