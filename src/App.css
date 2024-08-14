@@ -40,3 +40,20 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes fall {
+  from {
+    transform: translateY(-50vh);
+  }
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+.h-screen.w-screen {
+  overflow: hidden;
+}
+
+* {
+  cursor: none !important;
+}
