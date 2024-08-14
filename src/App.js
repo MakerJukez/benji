@@ -5,7 +5,7 @@ import backgroundImage from './bg.png';
 import NumberTicker from './number-ticker';
 
 function App() {
-  const audioRef = useRef(null);
+  const videoRef = useRef(null);
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [fallingBenjis, setFallingBenjis] = useState([]);
 
@@ -38,16 +38,9 @@ function App() {
     };
   }, []);
 
-  const handleImageClick = () => {
-    if (audioRef.current) {
-      audioRef.current.currentTime = 0;
-      audioRef.current.play();
-    }
-  };
-
   return (
     <div 
-      className="h-screen w-screen flex justify-center items-center cursor-none relative overflow-hidden bg-[#11FF37]"
+      className="h-screen w-screen flex justify-center items-center cursor-none relative overflow-hidden"
     >
       <div
         className="custom-cursor"
@@ -62,6 +55,17 @@ function App() {
       >
         💰
       </div>
+      <video
+        ref={videoRef}
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ pointerEvents: 'none' }}
+      >
+        <source src={`${process.env.PUBLIC_URL}/vid1.mp4`} type="video/mp4" />
+      </video>
       
       {fallingBenjis.map(benji => (
         <img 
@@ -79,7 +83,6 @@ function App() {
       <div className='absolute z-20 text-[#2d42ff] font-custom1 text-5xl md:text-7xl'>
         benjamin
       </div>
-      <audio ref={audioRef} src={`${process.env.PUBLIC_URL}/m.mp3`} />
       <div className='absolute top-5 font-custom1 text-[8px] md:text-base text-[#2d42ff]'>CA: updating...</div>
       <div className='absolute bottom-5 left-5 flex justify-center items-center z-10'>
         <a href="https://x.com/" className='cursor-none'>
