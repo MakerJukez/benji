@@ -47,7 +47,7 @@ function App() {
           fontSize: '32px',
         }}
       >
-        💰
+        💸
       </div>
       <video
         ref={videoRef}
