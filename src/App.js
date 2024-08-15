@@ -77,7 +77,7 @@ function App() {
       <div className='absolute z-20 text-[#2d42ff] font-custom1 text-4xl md:text-7xl'>
         benjamin
       </div>
-      <div className='absolute top-5 font-custom1 text-[8px] md:text-base text-[#2d42ff]'>CA: updating...</div>
+      <div className='absolute top-5 font-custom1 text-[8px] md:text-base text-[#2d42ff]'>CA: 8ZSo8U1pCBQ39MSXFpkKQNfUmS74qmJvEQ3UbD4xpump</div>
       <div className='absolute bottom-5 left-5 flex justify-center items-center z-10'>
         <a href="https://x.com/benjaminonsol" className='cursor-none'>
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" className='size-10 md:size-12 md:hover:scale-105 transition ease-in-out duration-150' fill="#2563eb" viewBox="0 0 50 50">
