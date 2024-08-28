@@ -66,7 +66,7 @@ function App() {
       <div className='absolute z-20 text-[#2d42ff] font-custom1 text-4xl md:text-7xl'>
         benji
       </div>
-      <div className='absolute top-5 font-custom1 text-[8px] md:text-base text-[#2d42ff]'>CA: updating..</div>
+      <div className='absolute top-5 font-custom1 text-[8px] md:text-base text-[#2d42ff]'>CA: 9tajEnCZHaKF2fugkvVipkSSKV9T92PuxtxGUy2oTRZW</div>
       <div className='absolute inset-0 h-screen w-screen opacity-10 bg-white'></div>
     </div>
   );
